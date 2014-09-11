@@ -27,11 +27,22 @@ tags: []
 
 <iframe width="100%" height="500" src="http://jsfiddle.net/junyuecao/mqjhwgzu/embedded/result,html,css,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-flex:
- - flex-grow : 初始值0，在flex中被忽略时为1
- - flex-shrink : 初始值1，在flex中被忽略时为1
- - flex-basis : 初始值未auto，在flex中被忽略时为0%
+### 属性列表：
 
-flex-flow:
- - flex-direction: row ,row-reverse , colmn , column-reverse
- - flex-wrap: nowrap , wrap, wrap-reverse
+#### 父：
+
+- display:flex;
+- align-content
+- align-items
+- justify-content
+- flex-flow:
+  - flex-direction: row ,row-reverse , colmn , column-reverse
+  - flex-wrap: nowrap , wrap, wrap-reverse
+
+#### 子：
+ - order
+ - align-self
+ - flex:
+   - flex-grow : 初始值0，在flex中被忽略时为1
+   - flex-shrink : 初始值1，在flex中被忽略时为1
+   - flex-basis : 初始值未auto，在flex中被忽略时为0%
