@@ -7,7 +7,7 @@ tags: ["CSS3"]
 ---
 {% include JB/setup %}
 
-<div align="center">
+<!-- <div align="center">
 <div class="first_circle"></div>
 <div class="first_div">
   <div class="second_div">
@@ -17,7 +17,7 @@ tags: ["CSS3"]
   </div>
 <div class="txt_welcome">WELCOME</div>
 <div class="txt_user">PRESS F5 TO REPLAY</div>
-</div>
+</div> -->
 
 <style>
 	.first_div
@@ -189,13 +189,13 @@ tags: ["CSS3"]
   100%{transform:rotate(720deg);}
 }
 </style>
-
+<!-- 
 <div class="contener_general">
       <div class="contener_mixte"><div class="ballcolor ball_1">&nbsp;</div></div>
       <div class="contener_mixte"><div class="ballcolor ball_2">&nbsp;</div></div>
       <div class="contener_mixte"><div class="ballcolor ball_3">&nbsp;</div></div>
       <div class="contener_mixte"><div class="ballcolor ball_4">&nbsp;</div></div>
-  </div>
+  </div> -->
 
   <style>
   .contener_general
@@ -292,4 +292,55 @@ tags: ["CSS3"]
   50%{transform:rotate(360deg) scale(1.3);}
   100%{transform:rotate(720deg) scale(1);}
 }
+</style>
+
+<div class="dot-loading">
+	<span class="dot"></span>	
+	<span class="dot"></span>	
+	<span class="dot"></span>	
+	<span class="dot"></span>	
+	<span class="dot"></span>	
+</div>
+
+<style>
+	.dot-loading{
+		text-align: center;
+		height: 50px;
+	}
+	.dot-loading .dot{
+		display: inline-block;
+		width:10px;
+		height: 10px;
+		background-color: #e84c3d;
+		border-radius: 50%;
+		position: relative;
+		top:30px;
+	}
+	.dot-loading .dot:first-child{
+		-webkit-animation: dot_loading 2.5s 0.2s infinite;
+	}
+	.dot-loading .dot:nth-child(2){
+		-webkit-animation: dot_loading 2.5s 0.4s infinite;
+	}
+	.dot-loading .dot:nth-child(3){
+		-webkit-animation: dot_loading 2.5s 0.6s infinite;
+	}
+	.dot-loading .dot:nth-child(4){
+		-webkit-animation: dot_loading 2.5s 0.8s infinite;
+	}
+	.dot-loading .dot:nth-child(5){
+		-webkit-animation: dot_loading 2.5s 1s infinite;
+	}
+	@-webkit-keyframes dot_loading
+	{
+	  0%{ top:30px;}
+	  3%{ top:28px;}
+	  5%{ top:27px;}
+	  7%{ top:24px;}
+	  10%{ top:35px;}
+	  12%{ top:33px;}
+	  15%{ top:30px;}
+	  
+	  100%{ top: 30px;}
+	}
 </style>
