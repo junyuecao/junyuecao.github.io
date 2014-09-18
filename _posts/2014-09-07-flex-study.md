@@ -43,6 +43,6 @@ tags: []
  - order
  - align-self
  - flex:
-   - flex-grow : 初始值0，在flex中被忽略时为1
-   - flex-shrink : 初始值1，在flex中被忽略时为1
-   - flex-basis : 初始值未auto，在flex中被忽略时为0%
+   - flex-grow : 初始值0，在flex中被忽略时为1 
+   - flex-shrink : 初始值1，在flex中被忽略时为1 
+   - flex-basis : 初始值未auto，在flex中被忽略时为0% 
