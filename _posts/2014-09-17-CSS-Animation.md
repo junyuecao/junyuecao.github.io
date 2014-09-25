@@ -317,19 +317,19 @@ tags: ["CSS3"]
 		top:30px;
 	}
 	.dot-loading .dot:first-child{
-		-webkit-animation: dot_loading 2.5s 0.2s infinite;
+		-webkit-animation: dot_loading 2.5s 0.2s infinite ease-out;
 	}
 	.dot-loading .dot:nth-child(2){
-		-webkit-animation: dot_loading 2.5s 0.4s infinite;
+		-webkit-animation: dot_loading 2.5s 0.4s infinite ease-out;
 	}
 	.dot-loading .dot:nth-child(3){
-		-webkit-animation: dot_loading 2.5s 0.6s infinite;
+		-webkit-animation: dot_loading 2.5s 0.6s infinite ease-out;
 	}
 	.dot-loading .dot:nth-child(4){
-		-webkit-animation: dot_loading 2.5s 0.8s infinite;
+		-webkit-animation: dot_loading 2.5s 0.8s infinite ease-out;
 	}
 	.dot-loading .dot:nth-child(5){
-		-webkit-animation: dot_loading 2.5s 1s infinite;
+		-webkit-animation: dot_loading 2.5s 1s infinite ease-out;
 	}
 	@-webkit-keyframes dot_loading
 	{
@@ -343,4 +343,29 @@ tags: ["CSS3"]
 	  
 	  100%{ top: 30px;}
 	}
+
+.center{
+    border: 1px solid #332;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: rgba(0,0,0,0.5);
+    -webkit-animation:ani 1s ease-in 1s 1 alternate forwards paused;
+}
+.center:hover{
+	-webkit-animation-play-state:running;
+}
+@-webkit-keyframes ani{
+    0%{-webkit-transform:translateX(-50px);}
+    50%{-webkit-transform:translateX(40px);}
+    70%{-webkit-transform:translateX(100px);}
+
+}
 </style>
+<div class="center"></div>
+
+#### 问题
+
+ - CSS clip是什么？
+ - animation-fill-mode
+
