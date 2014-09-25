@@ -262,8 +262,8 @@ rotate函数可以使元素在相应的轴上旋转。这个和直觉有点不�
 	});
 </script>
 
-<div style="perspective:2000px;">
-<div class="father">
+<div style="perspective:2000px;width:400px;height:400px;">
+<div class="father" style="transform: rotateY(280deg) translateZ(-200px);">
 <div class="child"></div>
 <div class="child"></div>
 <div class="child"></div>
@@ -271,11 +271,13 @@ rotate函数可以使元素在相应的轴上旋转。这个和直觉有点不�
 </div></div>
 <style>
 
-	.father{
-		
+	.father{		
 		position: relative;
 		width: 400px;
 		height: 400px;
+		transform-origin: 50% 50% -200px;
+		transform: translateZ(-200px);
+		transform-style:preserve-3d;
 	}
 	.child{
 		width: 400px;
