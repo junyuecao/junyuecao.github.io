@@ -12,6 +12,7 @@ tags: ["CSS3"]
 
  - `perspective-origin`默认在50%，50%
  - transform不影响文档流
+ - 多次transform函数作用时，后一次变换的坐标系为上一次变换完毕后的坐标系
 
 ### Perspective 视点
 To activate 3D space, an element needs perspective. This can be applied in two ways: using the transform property, with the perspective as a functional notation.
@@ -260,6 +261,48 @@ rotate函数可以使元素在相应的轴上旋转。这个和直觉有点不�
 		$ani.find('.panel-div').eq($li.index()).addClass('show');
 	});
 </script>
+
+<div style="perspective:2000px;">
+<div class="father">
+<div class="child"></div>
+<div class="child"></div>
+<div class="child"></div>
+<div class="child"></div>
+</div></div>
+<style>
+
+	.father{
+		
+		position: relative;
+		width: 400px;
+		height: 400px;
+	}
+	.child{
+		width: 400px;
+		height:400px;
+		position: absolute;
+		left:0;
+		top:0;
+	}
+	.child:nth-child(1){
+		background-color: red;
+		transform:translateZ(200px);
+		opacity: 0.6;
+		
+	}
+	.child:nth-child(2){
+		transform:rotateY(90deg) translateZ(200px);
+		background-color: #345251;
+	}
+	.child:nth-child(3){
+		transform:rotateY(180deg) translateZ(200px);
+		background-color: rgba(23,51,24,0.6);
+	}
+	.child:nth-child(4){
+		transform:rotateY(-90deg) translateZ(200px);
+		background-color: rgba(42,23,51,0.8);
+	}
+</style>
 <!-- <div class="row demo-row">
 
 <div class="col-md-3 demo-wrapper">
