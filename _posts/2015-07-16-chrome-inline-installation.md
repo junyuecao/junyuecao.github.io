@@ -9,7 +9,9 @@ tags: ["JavaScript"]
 {% include JB/setup %}
 
 <button onclick="ins()" id="install-button">Add to Chrome</button>
+
 <div id="installed">你已经安装了我的插件了 </div>
+
 <script>
 function ins() {
     chrome.webstore.install("https://chrome.google.com/webstore/detail/dcdlpgfpelckoblffdeppjjlcnmppjom",
