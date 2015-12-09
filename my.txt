@@ -1215,7 +1215,7 @@ function FindProxyForURL(url, host) {
     } else {
             // if none of above cases, it is always safe to use the proxy
             // return PROXY_METHOD;
-            return "HTTPS wsg1.avpn.cc:44300";
+            return "HTTPS wjp4.avpn.cc:44300";
     }
 
 }
