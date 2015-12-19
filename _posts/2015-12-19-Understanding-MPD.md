@@ -11,7 +11,9 @@ tags: ["Android"]
 ### Periods
 
 Periods包含在MPD元素的第一层，它用开始时间和持续时间来描述内容的一部分。一个场景或章节里可以有多个Periods， 也可以用来分离广告和正文内容。
-Adaptation Sets
+
+### Adaptation Sets
+
 Adaptation Set 包含了一个媒体流或者一组媒体流，最简单的情况下，一个Period用一个Adaptation Set包含所有的视频和音频，但是为了减少带宽每个流可以分到独立的Adaptation Set里。常见做法就是一个视频流，多个音频流（多语言）。Adaptation Set也可以包含字母或者Arbitrary元信息。
 
 ### Representation
