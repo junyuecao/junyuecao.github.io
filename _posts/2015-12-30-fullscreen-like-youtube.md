@@ -14,6 +14,12 @@ tags: ["Android"]
 
 在Kitkat 里加入了Translucent的导航条和状态栏，来实现全屏的App页面。我们正是利用这个特性来实现这种全屏的方式。
 
+### TL;DR
+
+简单来说就是：
+
+1. Activity Translucent
+2. 播放控件fitSystemWindows
 
 ### 实现
 
