@@ -14,7 +14,7 @@ tags: ["Android"]
 
 ### 一切变得更加容易
 
-Android Studio从1.4版本,加入了Vector Asset功能,这个功能可以让你导入矢量图,并指定它的dp大小,Android Studio和Gradle将自动生成不同分辨率对应的图片,并打包至APK.
+Android Studio从1.4版本(需要Gradle插件1.5以上),加入了Vector Asset功能,这个功能可以让你导入矢量图,并指定它的dp大小,Android Studio和Gradle将自动生成不同分辨率对应的图片,并打包至APK.
 
 在我们的源码里面只有一个xml文件:
 
@@ -39,7 +39,20 @@ Android Studio提供了一个向导来生成矢量图标.
 
 选择完成后可以设置大小, 透明度, 是否支持RTL布局等.
  
- > 注意,图标颜色在这里是无法修改的,需要生成之后到svg文件里修改图标的颜色.
+注意,图标颜色在这里是无法修改的,需要生成之后到svg文件里修改图标的颜色.或者使用代码修改
+
+{% highlight java %}
+
+    Drawable drawable = getDrawable;
+    drawable = DrawableCompat.wrap(drawable);
+    DrawableCompat.setTint(drawable, Color.GREEN);
+    
+    DrawableCompat.setTintMode(drawable, PorterDuff.Mode.SRC_IN);
+    
+    // 如果要恢复原始颜色的话
+    DrawableCompat.unwrap(Drawable drawable);
+
+{% endhighlight %}
 
 ![Vector Asset文件](https://raw.githubusercontent.com/junyuecao/private-static/master/20160106c.png)
 
