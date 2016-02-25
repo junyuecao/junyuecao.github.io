@@ -5,7 +5,6 @@ description: "理解$watch ，$apply 和 $digest --- 理解数据绑定过程"
 category: JavaScript
 tags: [JavaScript]
 ---
-{% include JB/setup %}
 
 
 原文地址：[http://angular-tips.com/blog/2013/08/watch-how-the-apply-runs-a-digest/][1]

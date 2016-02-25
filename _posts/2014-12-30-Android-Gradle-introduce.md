@@ -5,7 +5,7 @@ description: "Gradle基本配置-以某项目为例, Gradle是随着Android Stud
 category: Android
 tags: ["Android", "Gradle"]
 ---
-{% include JB/setup %}
+
 
 
 ## 0.为什么用gradle

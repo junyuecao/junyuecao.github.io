@@ -6,7 +6,7 @@ category: Android
 tags: ["Android"]
 ---
 
-{% include JB/setup %}
+
  
 > 原文：[https://lab.getbase.com/nested-scrolling-with-coordinatorlayout-on-android/](https://lab.getbase.com/nested-scrolling-with-coordinatorlayout-on-android/)
 

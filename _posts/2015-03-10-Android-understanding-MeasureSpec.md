@@ -6,7 +6,7 @@ category: Android
 tags: ["Java", "Android"]
 ---
 
-{% include JB/setup %}
+
 
 在自定义View的时候,我们经常会用到onMeasure这个函数,这个函数:
 

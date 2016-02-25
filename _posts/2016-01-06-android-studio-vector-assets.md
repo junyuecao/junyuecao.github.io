@@ -6,7 +6,7 @@ category: Android
 tags: ["Android"]
 ---
 
-{% include JB/setup %}
+
 
 ### 史前做法
 

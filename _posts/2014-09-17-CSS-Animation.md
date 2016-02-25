@@ -5,7 +5,7 @@ description: "CSS 动画研究"
 category: 
 tags: ["CSS3"]
 ---
-{% include JB/setup %}
+
 
 <!-- <div align="center">
 <div class="first_circle"></div>

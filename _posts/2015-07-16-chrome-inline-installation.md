@@ -6,7 +6,7 @@ category:
 tags: ["JavaScript"]
 ---
 
-{% include JB/setup %}
+
 
 <button onclick="ins()" id="install-button">Add to Chrome</button>
 

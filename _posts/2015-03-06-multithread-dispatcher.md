@@ -6,7 +6,7 @@ category: Java
 tags: ["Java", "Android", "Volley", "多线程"]
 ---
 
-{% include JB/setup %}
+
 
 #### 1.首先我们需要一个队列:
 

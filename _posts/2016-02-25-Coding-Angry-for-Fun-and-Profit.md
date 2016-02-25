@@ -1,12 +1,12 @@
 ---
 layout: post
-title: WHY WON’T THIS WORK?! Coding Angry for Fun and Profit 翻译
+title: 为毛没有效果?! 为了乐趣和收益怒写代码
 description: "WHY WON’T THIS WORK?! Coding Angry for Fun and Profit 翻译"
 category: 
 tags: ["Android"]
 ---
 
-{% include JB/setup %}
+ > 原文链接: [https://medium.com/google-developers/why-won-t-this-work-coding-angry-for-fun-and-profit-1ef38a2b7196#.8l4l3whz8](https://medium.com/google-developers/why-won-t-this-work-coding-angry-for-fun-and-profit-1ef38a2b7196#.8l4l3whz8)
 
 
 ## 为什么用错误的方式来构建app是正确的呢？
@@ -40,7 +40,7 @@ tags: ["Android"]
 
 我说这可能会花费我1小时时间，如果从0开始构建的话。我并没有坐在他旁边结对编程，我录下来我自己写代码的过程（还切掉了那些“非常”烦人的部分）
 
-<iframe width="700" height="393" src="https://www.youtube.com/embed/mvhKjh5D1WQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="280px" src="https://www.youtube.com/embed/mvhKjh5D1WQ" frameborder="0" allowfullscreen></iframe>
 [https://youtu.be/mvhKjh5D1WQ](https://youtu.be/mvhKjh5D1WQ)
 
 这段视频展示了最简单快速、也是最“错误”的构建app的方式。16分钟里展示了接近两小时真实coding和debugging的时间。并且在一个Activity里实现所有的功能。这种实现方式有成百上千的错误的地方，我在视频的结尾花了一些时间来解释哪些地方需要换一个方式实现。

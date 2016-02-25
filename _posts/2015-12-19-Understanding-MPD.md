@@ -6,7 +6,6 @@ category: Android
 tags: ["Android"]
 ---
 
-{% include JB/setup %}
 
 ### Periods
 
