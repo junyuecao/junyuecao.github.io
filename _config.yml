@@ -19,7 +19,7 @@ url:            'http://zheteng.me'
 author:         'JunyueCao'
 authorTwitter:  'junyuecao'
 
-permalink:       /:year/:month/:day/:title/
+permalink:       /:categories/:year/:month/:day/:title/
 
 defaults:
     -
