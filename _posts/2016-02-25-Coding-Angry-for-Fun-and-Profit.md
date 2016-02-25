@@ -6,7 +6,7 @@ category:
 tags: ["Android"]
 ---
 
- > 原文链接: [https://medium.com/google-developers/why-won-t-this-work-coding-angry-for-fun-and-profit-1ef38a2b7196#.8l4l3whz8](https://medium.com/google-developers/why-won-t-this-work-coding-angry-for-fun-and-profit-1ef38a2b7196#.8l4l3whz8)
+ > 原文链接: [https://medium.com/google-developers/why-won-t-this-work-coding-angry-for-fun-and-profit-1ef38a2b7196#.8l4l3whz8](https://medium.com/google-developers/why-won-t-this-work-coding-angry-for-fun-and-profit-1ef38a2b7196#.8l4l3whz8) 大部分地方都是直译的，有些地方读起来可能没有那么通畅。
 
 
 ## 为什么用错误的方式来构建app是正确的呢？
@@ -25,7 +25,7 @@ tags: ["Android"]
 
 > 你感觉自己就是凡人中的上帝，简直能随意弯曲宇宙。你感觉一切皆有可能。
 
-也就仅仅是那一瞬间是这样的。我的情绪会在无比的兴奋和欲哭无泪的沮丧之间徘徊。
+其实也就仅仅是那一瞬间会有这种感觉。其他大部分时候我的情绪会在无比的兴奋和欲哭无泪的沮丧之间徘徊。
 
 ### 沮丧是我们最普遍的同感
 
