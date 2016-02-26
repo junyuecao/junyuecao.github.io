@@ -1,3 +1,5 @@
+gems: [jekyll-paginate]
+
 name: 折腾不止
 description: 爱折腾，爱Android，爱前端
 meta_description: "爱折腾，爱Android，爱前端"
