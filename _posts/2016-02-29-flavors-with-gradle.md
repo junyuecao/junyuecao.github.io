@@ -183,6 +183,8 @@ android {
     android:authorities="${applicationId}.provider"/>
 {% endhighlight %}
 
+你问我Java代码中怎么获取？难道你忘了BuildConfig了嘛？
+
 ### Manifest 占位符
 
 有些SDK会把配置在Manifest文件中的meta信息里，而不同的flavor这个信息不一样，这是我们可以通过Manifest 占位符来实现：
