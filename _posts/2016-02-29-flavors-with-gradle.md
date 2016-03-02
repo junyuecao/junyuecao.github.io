@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gradle打包APK的一些小技巧
+title: Gradle打包APK的一些小技巧和productFlavor配置
 description: 在使用Gradle来打包Android应用之前，Android自动化打包通常会选择使用ant，ant是一种一步一步来执行任务的工具，通常打包一个apk要经过一个复杂的过程，ant工具通过一步一步完成这些过程来生成一个apk。如果要实现一个复杂一点的打包过程，它的xml配置文件的长度也是足以让你崩溃的。Gradle的出现让打包过程变得十分轻松，而且配置起来也是简单易懂。以前需要写好几天的配置文件现在只要简单的几步就能完成，配合Android Studio更加得心应手。
 category: Android
 tags: ["Android"]
