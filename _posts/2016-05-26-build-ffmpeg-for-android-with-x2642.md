@@ -36,7 +36,7 @@ AS从1.3开始支持jni，可以在src/main/jni目录下新建C或者C++的文�
 
 `Android.mk`文件内容如下：
 
-{% highlight make%}
+{% highlight shell%}
 LOCAL_PATH := $(call my-dir)
 
 # FFmpeg库
