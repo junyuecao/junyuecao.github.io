@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac下为Android编译FFMPEG和x264
+title: Mac下为Android编译FFMPEG和x264 （一）
 description: "NDK提供了很好的交叉编译支持，让我们来学习一下如何在Mac下面通过NDK编译工具来编译一个Android上可以运行的ffmpeg"
 category: Android
 tags: ["ffmpeg", "Android", "Mac"]
