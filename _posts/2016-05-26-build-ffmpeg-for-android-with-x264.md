@@ -204,6 +204,8 @@ $TOOLCHAIN/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFOR
  1. 打包出一个ffmpeg.so文件，上面的配置就是这样的结果
  2. 每个模块打包出单独的so,那么需要对上面的配置文件做两件事：1.去掉最后一段配置（make install 后面的），2.将configure选项--enable-static  --disable-shared 反过来--enable-shared  --disable-static
 
+*另外在这段配置中我去掉了很多编码解码组件，只保留了我需要的组件，大家可以视情况而定，增减配置。*
+
 #### 编译结果
 最终编译结果在ffmpeg的编译脚本里的`PREFIX=../ffandroid`所定义的路径，对于上面说的两种方式产生的编译产物分别如下。
 第一种：
