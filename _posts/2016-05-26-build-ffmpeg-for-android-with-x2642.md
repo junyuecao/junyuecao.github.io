@@ -9,7 +9,7 @@ tags: ["ffmpeg", "Android", "Mac"]
 
 #### 前言
 
-[前一篇文章](/android/2016/05/26/build-ffmpeg-for-android-with-x264/)我们编译好了一个so文件（或者一个个独立的so，为了方便，我合并成一个so文件）。那么如何在Android Studio（后面简称AS）中导入ffmpeg以及使用呢？
+[前一篇文章](/android/2016/05/25/build-ffmpeg-for-android-with-x264/)我们编译好了一个so文件（或者一个个独立的so，为了方便，我合并成一个so文件）。那么如何在Android Studio（后面简称AS）中导入ffmpeg以及使用呢？
 
 #### 1. AS的jni支持
 
