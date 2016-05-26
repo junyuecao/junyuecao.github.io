@@ -276,3 +276,6 @@ $TOOLCHAIN/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFOR
 我在编译单个so过程中遇到一个出线`undefined reference to 'x264_picture_init'`的错误，是因为上面配置文件最后一段没有加入`android-lib/lib/libx264.a` 静态文件的引用导致找不到x264库的函数，这还是由于我对C语言的编译链接过程以及动态库和静态库之间的区别理解太浅。这里将静态库合并成一个so文件的过程中需要保证每一个函数都能够找到，不像动态链接库，可以在需要时再去加载库文件。
 
 
+#### 接下来
+
+[后一篇文章](/android/2016/05/26/build-ffmpeg-for-android-with-x2642/)
