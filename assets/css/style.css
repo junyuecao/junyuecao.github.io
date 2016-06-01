@@ -492,6 +492,16 @@ Post List
 	opacity: 0.8;
 }
 
+#markdown-toc {
+	margin-bottom: 1em;
+}
+#markdown-toc li{
+    list-style-type:none;
+}
+#markdown-toc ul {
+    padding-left: 1em;
+}
+
 /* Post Navigation */
 #post-nav {
 	border-top:1px solid #eee;

@@ -1,3 +1,10 @@
+code.highlighter-rouge {
+    color: #060;
+    font: 13px/18px Consolas, "Liberation Mono", Menlo, Monaco, Courier, monospace;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .gh {
