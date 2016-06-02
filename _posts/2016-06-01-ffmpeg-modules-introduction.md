@@ -9,7 +9,7 @@ tags: ["ffmpeg"]
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-### 1. Libavformat该要
+### 1. Libavformat概要
 
 #### 1.1 简要介绍
 
@@ -31,9 +31,9 @@ lavf支持的输入格式可以由数据结构`AVInputFormat`来描述，对应�
  - 一个`AVStreams`数组，描述了这个文件里存储的所有的基础流。`AVStream`通常由他们在这个数组的索引来引用。
  - 一个I/O context。一般由lavf来打开，或者由用户设置输入，输出的都由用户自行设置（除非你用的是`AVFMT_NOFILE`格式）。
 
-#### 1.2 传递选项到封装器或解封装器
+#### 1.2 传递参数到封装器或解封装器
 
-可以通过使用`AVOptions`来配置lavf的封装器和解封装器。通用（格式无关）的libavformat的配置信息会由`AVFormatContext`来提供，用户可以通过调用`av_opt_next()`或者`av_opt_find()`，传入`AVFormatContext`（或者通过`avformat_get_class()`获取到的它的`AVClass`）来获得。私有（格式特定）的配置信息由`AVFormatContext.priv_data`提供，但是只有对应格式数据结构里的`AVInputFormat.priv_class`/`AVOutputFormat.priv_class`非空时有效。更多的配置项可能由`I/O context`（当它的AVClass非空时才有效）和协议层来提供。查看内嵌在`AVOptions`文档里的讨论来学习如何访问这些配置。
+可以通过使用`AVOptions`来配置lavf的封装器和解封装器。通用（格式无关）的libavformat的配置信息会由`AVFormatContext`来提供，用户可以通过调用`av_opt_next()`或者`av_opt_find()`，传入一个`AVFormatContext`来获得（或者通过`avformat_get_class()`获取到的它的`AVClass`）。私有（格式特定）的配置信息由`AVFormatContext.priv_data`提供，但是只有对应格式数据结构里的`AVInputFormat.priv_class`/`AVOutputFormat.priv_class`非空时有效。更多的配置项还可能由`I/O context`（当它的AVClass非空时才有效）和协议层来提供。查看内嵌在`AVOptions`文档里的讨论来学习如何访问这些配置。
 
 #### 1.3 url
 
@@ -45,9 +45,9 @@ libavformat里的URL串由协议名，一个冒号‘:’和协议特定字符�
 
 ### 2. 解封装
 
-解封装意思就是读取一个媒体文件，并将其分离成一个个数据快（packets）
+解封装意思就是读取一个媒体文件，并将其分离成一个个数据块（packets）
 
-一个[packet](https://ffmpeg.org/doxygen/3.0/structAVPacket.html)包涵了一个或者多个编码帧，并且属于一个基础数据流。在lavf的API里，`avformat_open_input()`函数用于打开一个文件，`av_read_frame()`用于读取一个packet，最后要调用`avformat_close_input()`来做清理工作。
+一个[packet](https://ffmpeg.org/doxygen/3.0/structAVPacket.html)包涵了一个或者多个数据帧，并且属于一个基础数据流。在lavf的API里，`avformat_open_input()`函数用于打开一个文件，`av_read_frame()`用于读取一个packet，最后要调用`avformat_close_input()`来做清理工作。
 
 #### 2.1 打开媒体文件
 
