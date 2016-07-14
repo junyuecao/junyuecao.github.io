@@ -45,7 +45,7 @@ Android Studio的内存快照是无法直接用mat打开的，我们需要转换
 #### 2.2 查找GC Root
 
 打开快照后OverView界面下方有个Actions 区域，选择Dominator Tree，打开一个新的Dominator Tree窗口，最上方输入要过滤的类，这里我输入`LiveWatchActivity`，就列出了我们刚才找到的泄露的对象了：
-![pic](https://github.com/junyuecao/private-static/blob/master/20160713f.png?raw=true) 
+![pic](https://github.com/junyuecao/private-static/blob/master/20160713e.png?raw=true) 
 
 任意选择一个，选择下图的菜单项，就可以看到GC Root对象了，这里我们过滤了WeakReference的对象。
 ![pic](https://github.com/junyuecao/private-static/blob/master/20160713f.png?raw=true) 
