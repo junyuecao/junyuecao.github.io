@@ -3,7 +3,9 @@ layout: post
 title: How to get a knox licence
 permalink: knox-cn/
 ---
-
+<style>
+.main-nav {display:none;}
+</style>
 1.打开 [https://seap.samsung.com/](https://seap.samsung.com/)
 
 2.点击右上角的 'Enroll' 按钮
@@ -49,5 +51,3 @@ permalink: knox-cn/
 12.大功告成. 将这个KEY粘贴到App中进行激活. 注意，一个KEY的有效期是3个月，每三个月需要重新生成一次
 
 ![](https://github.com/junyuecao/private-static/blob/master/knox/11.png?raw=true)
-
-{% include footer.html %}

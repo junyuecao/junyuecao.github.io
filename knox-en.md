@@ -3,7 +3,9 @@ layout: post
 title: How to get a knox licence
 permalink: knox-en/
 ---
-
+<style>
+.main-nav {display:none;}
+</style>
 1.Open [https://seap.samsung.com/](https://seap.samsung.com/)
 
 2.Click the 'Enroll' on the top right corner
@@ -49,5 +51,3 @@ permalink: knox-en/
 12.We are done. Copy the licence key and input to the app. You will have to regenerate a new key every 3 months.
 
 ![](https://github.com/junyuecao/private-static/blob/master/knox/11.png?raw=true)
-
-{% include footer.html %}
