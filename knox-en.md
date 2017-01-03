@@ -4,7 +4,7 @@ title: How to get a knox licence
 permalink: knox-en/
 ---
 <style>
-.main-nav {display:none;}
+footer, .ds-thread, .main-nav {display:none;}
 </style>
 1.Open [https://seap.samsung.com/](https://seap.samsung.com/)
 
