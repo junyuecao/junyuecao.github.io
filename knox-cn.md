@@ -6,6 +6,9 @@ permalink: knox-cn/
 <style>
 footer, .ds-thread, .main-nav {display:none;}
 </style>
+
+ > 请最好不要将KEY分享给他人，测试KEY超过一定人数使用会导致KEY被停用。由于每个账号只能申请一个测试KEY，你只能等KEY失效才能再次申请。
+
 1.打开 [https://seap.samsung.com/](https://seap.samsung.com/)
 
 2.点击右上角的 'Enroll' 按钮

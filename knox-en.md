@@ -6,6 +6,10 @@ permalink: knox-en/
 <style>
 footer, .ds-thread, .main-nav {display:none;}
 </style>
+
+ > Do NOT share your licence key to others. If a key is used by many people, it will be terminated. And each account can apply only one key so that you have to wait for a new one until the key is expired.
+
+
 1.Open [https://seap.samsung.com/](https://seap.samsung.com/)
 
 2.Click the 'Enroll' on the top right corner
