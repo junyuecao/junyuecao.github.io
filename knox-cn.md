@@ -7,6 +7,8 @@ permalink: knox-cn/
 footer, .ds-thread, .main-nav {display:none;}
 </style>
 
+ > 目前来看申请的KEY有很大几率显示无效，也许是三星做了限制，原因不明。对此我也无能为力。
+ 
  > 请最好不要将KEY分享给他人，测试KEY超过一定人数使用会导致KEY被停用。由于每个账号只能申请一个测试KEY，你只能等KEY失效才能再次申请。
  
  > 申请的KEY最长可能需要等待一天才生效，请耐心等待。
