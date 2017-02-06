@@ -7,6 +7,8 @@ permalink: knox-en/
 footer, .ds-thread, .main-nav {display:none;}
 </style>
 
+Samsung have informed me to stop developing this app. Sorry.
+ {% comment %}
  > Do NOT share your licence key to others. If a key is used by many people, it will be terminated. And each account can apply only one key so that you have to wait for a new one until the key is expired.
  
  > It will take up to 24 hours for your licence key get available. Please be patient.
@@ -57,3 +59,5 @@ footer, .ds-thread, .main-nav {display:none;}
 12.We are done. Copy the licence key and input to the app. You will have to regenerate a new key every 3 months.
 
 ![](https://github.com/junyuecao/private-static/blob/master/knox/11.png?raw=true)
+
+{% endcomment %} 
