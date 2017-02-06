@@ -7,7 +7,7 @@ permalink: knox-en/
 footer, .ds-thread, .main-nav {display:none;}
 </style>
 
-Samsung have informed me to stop developing this app. Sorry.
+Samsung has informed me to stop developing this app. Sorry.
 
  {% comment %}
  
