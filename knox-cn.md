@@ -7,6 +7,12 @@ permalink: knox-cn/
 footer, .ds-thread, .main-nav {display:none;}
 </style>
 
+三星警告说不允许发布KNOX key申请教程. 如有疑问,请联系zheteng.me@qq.com
+
+{% comment %} 
+
+ > 目前来看申请的KEY有很大几率显示无效，也许是三星做了限制，原因不明。对此我也无能为力。
+ 
  > 请最好不要将KEY分享给他人，测试KEY超过一定人数使用会导致KEY被停用。由于每个账号只能申请一个测试KEY，你只能等KEY失效才能再次申请。
  
  > 申请的KEY最长可能需要等待一天才生效，请耐心等待。
@@ -56,3 +62,5 @@ footer, .ds-thread, .main-nav {display:none;}
 12.大功告成. 将这个KEY粘贴到App中进行激活. 注意，一个KEY的有效期是3个月，每三个月需要重新生成一次
 
 ![](https://github.com/junyuecao/private-static/blob/master/knox/11.png?raw=true)
+
+{% endcomment %} 
