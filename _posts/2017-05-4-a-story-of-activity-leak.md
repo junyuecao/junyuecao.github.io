@@ -61,6 +61,10 @@ Android Studio的内存快照是无法直接用mat打开的，我们需要转换
 
 ![pic](https://github.com/junyuecao/private-static/blob/master/20160713h.png?raw=true) 
 
+这里很关键的内容就是callback:`LiveGiftHolder$2`，找到这个匿名内部类，就基本知道是什么原因了。在AS中打开这个`LiveGiftHolder`， 按CMD+F12（windows的可以自己查一下）打开FileStructure：就可以看到这个匿名内部类是哪个了：
+
+![pic](https://github.com/junyuecao/private-static/blob/master/20160713i.png?raw=true) 
+
 这里的`LiveWatchManager`持有了`LiveWatchActivity`，于是最终我们找到了导致内存泄露的地方，其实是一个递归`Handler.postDelayed()`导致的无法释放Activity的问题。
 
 ### 4. LeakCanary不是万能的
