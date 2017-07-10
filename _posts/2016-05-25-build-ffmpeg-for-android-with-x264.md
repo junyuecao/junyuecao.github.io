@@ -214,7 +214,7 @@ $TOOLCHAIN/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFOR
 *另外在这段配置中我去掉了很多编码解码组件，只保留了我需要的组件，大家可以视情况而定，增减配置。*
 
 #### 编译结果
-最终编译结果在ffmpeg的编译脚本里的`PREFIX=../ffandroid`所定义的路径，对于上面说的两种方式产生的编译产物分别如下。
+最终编译结果在ffmpeg的编译脚本里的`OUT_PREFIX=../264fflib`所定义的路径，对于上面说的两种方式产生的编译产物分别如下。
 第一种：
 
 {% highlight shell%}
