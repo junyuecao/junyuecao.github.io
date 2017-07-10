@@ -93,21 +93,25 @@ cd ..
 
 {% highlight shell%}
 cd x264
-export ANDROID_NDK=/Users/junyuecao/Work/adt-bundle-mac-x86_64-20140702/ndk #ndk 目录根据你的安装目录
-export TOOLCHAIN=../fftoolchain #toolchain 安装目录 和上面的不同，因为x264在ffmpeg的下级
+export WD=/Users/junyuecao/Work/Misc/ffmpeg
+export PLATFORM_VERSION=android-24
+export ANDROID_NDK=/Users/junyuecao/Work/adt-bundle-mac-x86_64-20140702/sdk/ndk-bundle #ndk 目录根据你的安装目录
+export TOOLCHAIN=$WD/../fftoolchain #toolchain 安装目录
 export SYSROOT=$TOOLCHAIN/sysroot/
-export PLATFORM=$NDK/platforms/android-8/arch-arm
-export PREFIX=../ffandroid #编译结果的目录 最终生成的编译结果
+export PLATFORM=$ANDROID_NDK/platforms/$PLATFORM_VERSION/arch-arm
+export PREFIX=$WD/android-lib #编译结果的目录
+export OUT_PREFIX=$WD/../264fflib
 
 #生成toolchain目录，这一段可以在第一次运行后注释掉
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh \
     --toolchain=arm-linux-androideabi-4.9 \
-    --platform=android-8 --install-dir=$TOOLCHAIN 
+    --platform=$PLATFORM_VERSION --install-dir=$TOOLCHAIN 
 
 #
 ./configure \
     --prefix=$PREFIX \
     --enable-static \
+    --enable-shared \
     --enable-pic \
     --disable-asm \
     --disable-cli \
@@ -118,6 +122,8 @@ $ANDROID_NDK/build/tools/make-standalone-toolchain.sh \
 make -j8
 make install
 
+cd ..
+
 # 加入x264编译库
 EXTRA_CFLAGS="-I./android-lib/include" 
 EXTRA_LDFLAGS="-L./android-lib/lib"
@@ -125,7 +131,7 @@ EXTRA_LDFLAGS="-L./android-lib/lib"
 
 ./configure \
     --target-os=linux \
-    --prefix=$PREFIX \
+    --prefix=$OUT_PREFIX \
     --enable-cross-compile \
     --enable-runtime-cpudetect \
     --disable-asm \
@@ -187,7 +193,7 @@ make -j8
 make install
 
 # 这段解释见后文
-$TOOLCHAIN/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFORM/usr/lib -L$PREFIX/lib -soname libffmpeg.so -shared -nostdlib -Bsymbolic --whole-archive --no-undefined -o $PREFIX/libffmpeg.so \
+$TOOLCHAIN/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFORM/usr/lib -L$OUT_PREFIX/lib -soname libffmpeg.so -shared -nostdlib -Bsymbolic --whole-archive --no-undefined -o $OUT_PREFIX/libffmpeg.so \
     android-lib/lib/libx264.a \
     libavcodec/libavcodec.a \
     libavfilter/libavfilter.a \
@@ -197,7 +203,7 @@ $TOOLCHAIN/bin/arm-linux-androideabi-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFOR
     libswscale/libswscale.a \
     libpostproc/libpostproc.a \
     libavdevice/libavdevice.a \
-    -lc -lm -lz -ldl -llog --dynamic-linker=/system/bin/linker $TOOLCHAIN/lib/gcc/arm-linux-androideabi/4.9/libgcc.a  
+    -lc -lm -lz -ldl -llog --dynamic-linker=/system/bin/linker $TOOLCHAIN/lib/gcc/arm-linux-androideabi/4.9.x/libgcc.a   
 {% endhighlight %}
 
 这里有两种选择：
