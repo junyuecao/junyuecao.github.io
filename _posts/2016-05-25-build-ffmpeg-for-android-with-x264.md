@@ -59,16 +59,17 @@ SLIB_INSTALL_LINKS='$(SLIBNAME)'
 
 {% highlight shell%}
 cd x264
-export ANDROID_NDK=/Users/junyuecao/Work/adt-bundle-mac-x86_64-20140702/ndk #ndk 目录根据你的安装目录
+export PLATFORM_VERSION=android-24
+export ANDROID_NDK=/Users/junyuecao/Work/adt-bundle-mac-x86_64-20140702/sdk/ndk-bundle #ndk 目录根据你的安装目录
 export TOOLCHAIN=../../fftoolchain #toolchain 安装目录
 export SYSROOT=$TOOLCHAIN/sysroot/
-export PLATFORM=$NDK/platforms/android-8/arch-arm
+export PLATFORM=$ANDROID_NDK/platforms/$PLATFORM_VERSION/arch-arm
 export PREFIX=../android-lib #编译结果的目录
 
 #生成toolchain目录，这一段可以在第一次运行后注释掉
 $ANDROID_NDK/build/tools/make-standalone-toolchain.sh \
     --toolchain=arm-linux-androideabi-4.9 \
-    --platform=android-8 --install-dir=$TOOLCHAIN 
+    --platform=$PLATFORM_VERSION --install-dir=$TOOLCHAIN 
 
 #
 ./configure \
