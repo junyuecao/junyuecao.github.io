@@ -1,8 +1,8 @@
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate, github-pages]
 
 name: 折腾不止
-description: 爱折腾，爱Android，爱前端
-meta_description: "爱折腾，爱Android，爱前端"
+description: 爱折腾，Enjoy creating
+meta_description: "爱折腾，Enjoy creating"
 
 aboutPage: true
 
