@@ -9,7 +9,7 @@ aboutPage: true
 highlighter: rouge
 
 paginate: 20
-baseurl: /
+baseurl: '/'
 domain_name: 'http://zheteng.me'
 google_analytics: 'UA-71884954-2'
 disqus: true
