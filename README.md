@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/junyuecao/junyuecao.github.io.svg?branch=master)](https://travis-ci.org/junyuecao/junyuecao.github.io)
+
 # Cactus Theme for Jekyll
 
 This is a port of [Cactus](https://github.com/koenbok/Cactus)'s default theme for Jekyll.
