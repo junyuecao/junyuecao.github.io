@@ -1,4 +1,4 @@
-plugins: [jekyll-paginate, github-pages]
+plugins: [jekyll-paginate, ]
 
 name: 折腾不止
 description: 爱折腾，Enjoy creating
