@@ -7,7 +7,7 @@ permalink: knox-cn/
 footer, .ds-thread, .main-nav {display:none;}
 </style>
 
-三星警告说不允许发布KNOX key申请教程. 如有疑问,请联系zheteng.me@qq.com
+冻住目前已失效. 如有疑问,请联系zheteng.me@qq.com
 
 {% comment %} 
 
