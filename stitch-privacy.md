@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 隐私政策
-permalink: speed-privacy/
+permalink: stitch-privacy/
 ---
 
 #引言
